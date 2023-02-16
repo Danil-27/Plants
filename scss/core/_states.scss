@@ -9,6 +9,10 @@
    display: block;
 }
 
+.is-relative{
+    position: relative;
+}
+
 .is-uppercase {
    text-transform: uppercase;
 }
@@ -17,10 +21,18 @@
    justify-content: center;
 }
 
+
+
+// Color text
 .is-text-red {
-    
+    color: var(--orange);
 }
-
 .is-text-green {
-
+    color: var(--green);
+}
+.is-text-dark-grey {
+    color: var(--dark-grey);
+}
+.is-text-grey {
+     color: var(--grey);
 }

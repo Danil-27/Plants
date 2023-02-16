@@ -1,0 +1,25 @@
+.leaf {
+    position: absolute;
+    &_lg {
+        top: 0;
+        left: 0;
+    }
+    &_md {
+        top: 160px;
+        left: 80px;
+    }
+    &_sm {
+        top: 210px;
+        left: 250px;
+    }
+    &_xs {
+        &-l {
+            top: 170px;
+            left: 0; 
+        }
+        &-r {
+            top: 100px;
+            left: 210px;
+        }
+    }
+}

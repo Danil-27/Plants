@@ -1,4 +1,6 @@
-.section {
-    // padding-top: rem(62px);
-    // padding-bottom: rem(62px);
+.section { 
+    &_welcome {
+        padding-top: rem(62px);
+        padding-bottom: rem(62px);
+    }
 }

@@ -1,0 +1,15 @@
+.welcome {
+    &__content {
+        padding-top: rem(38px);
+    }
+    .text {
+        padding-top: rem(40px);
+    }
+    .button {
+        margin-top: rem(48px);
+        padding: rem(14px) rem(27px) ;
+        border: 2px solid var(--orange);
+        border-radius: 10px;
+        color: var(--black);
+    }
+}
