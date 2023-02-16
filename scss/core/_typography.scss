@@ -1,0 +1,10 @@
+:root{
+    // ищем самый маленький font-size и делим line-height получаем средний  20px / 16px
+   --baseline: 1.25;
+   --base-font-size: 16px;
+   --font-family: 'Inter', sans-serif;
+   --font-weight: 400;
+}
+
+// Отдельная переменная font-size для миксинов rem()
+$base-font-size: 16px; 

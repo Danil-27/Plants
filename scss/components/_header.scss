@@ -1,0 +1,29 @@
+.header {
+    &__conationer{
+        display: flex;
+        align-items: center;
+        height: rem(96px);
+        
+    }
+    &__logo{
+        flex: 1 0 auto;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__conationer{
+            height: rem(117px);
+            
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        &__conationer{
+            height: rem(134px);
+        }
+    }
+}

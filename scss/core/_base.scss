@@ -1,0 +1,32 @@
+html.noscroll {
+   overflow: hidden;
+}
+
+html, body{
+   font-size: var(--base-font-size);
+   line-height: var(--baseline);
+   height: 100%;
+}
+
+body{
+   font-family: var(--font-family);
+   font-weight: var(--font-weight);
+   background-color: var(--color-bg-white);
+}
+
+
+
+// Прижимаю footer к низу
+.body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    min-height: 100px;
+}
+
+
+

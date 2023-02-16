@@ -1,0 +1,71 @@
+.burger {
+    display: block;
+    width: rem(70px);
+    padding: rem(15px);
+    // z-index: 2;
+    &__line {
+        display: block;
+        background-color: var(--grey) ;
+        width: rem(40px);
+        height: 2px;
+        &:not(:first-child){
+            margin-top: rem(8px);
+        }
+    }
+    // &__line:not(:first-child){
+    //     border:1px solid red;
+    // }
+    // position: relative;
+    // &__line {
+    //     position: absolute;
+    //     left: 0;
+    //     height: 0.166rem;
+    //     width: 100%;
+    //     top: rem(8px);
+    //     border-radius: 5.555rem;
+    //     background-color: black;
+    //     transition: all 0.3s;
+    //     padding-top: rem(8px);
+    // }
+    // span {
+    // }
+    // &::before,&::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-color: var(--color-bg-black);
+    //    width: 100%;
+    //    height: rem(3px);
+    //    left: 0;
+    //    border-radius: 5.555rem;
+    //    background-color: black;
+    // }
+    // &::before {
+    //     top: 0;
+    //     transition: transform 1s;
+    // }
+    // &::after {
+    //     bottom: rem(1px);
+    //     transition: transform 1s;
+    // }
+    // &.active::before {
+    //     transform: rotate(45deg);
+    //     transition: transform 1s;
+    //     top: rem(8px);
+    // }
+    // &.active span {
+    //    transform: scaleX(0);
+    //    transition: transform 0.3s ;
+    // }
+    // &.active::after {
+    //    transform: rotate(-45deg);
+    //    transition: transform 1s;
+    //    bottom: rem(9px);
+    // }
+ }
+ 
+ @media screen and (min-width: 768px){
+    .burger { 
+       display: none;
+    }
+ }
+
