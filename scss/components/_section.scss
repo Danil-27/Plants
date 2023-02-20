@@ -1,6 +1,35 @@
 .section { 
     &_welcome {
-        padding-top: rem(62px);
-        padding-bottom: rem(62px);
+        background-color: var(--section-bg);
+        padding-top: rem(24px);
+        padding-bottom: rem(24px);
+    }
+    &_about {
+        padding-top: rem(30px);
+        padding-bottom: rem(30px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section { 
+        &_welcome {
+            padding-top: rem(40px);
+            padding-bottom: rem(70px);
+        }
+        &_about {
+            padding-top: rem(40px);
+            padding-bottom: rem(95px);
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .section { 
+        &_welcome {
+            padding-top: rem(62px);
+        }
+        &_about {
+            padding-top: rem(95px);
+        }
     }
 }

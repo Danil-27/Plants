@@ -4,6 +4,8 @@
 <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" crossorigin="use-credentials" href="" />
+    <!-- !! узнать про  manifest -->
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -16,20 +18,18 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
     <!-- description -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="We grow plants and give you oxygen">
+    <meta name="keywords" content="plants">
     <!-- SEO -->
-    <meta itemprop="description" content="">
-    <meta itemprop="keywords" content="">
+    <meta itemprop="description" content="We grow plants and give you oxygen">
+    <meta itemprop="keywords" content="plants">
     <!-- Title -->
     <title>Plants</title>
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Js -->
@@ -40,7 +40,7 @@
         <div class="header__conationer container">
             <div class="header__logo">
                 <a class="logo" href="./index.html">
-                    <img src="./img/logo.svg" alt="logo Plants">
+                    <img src="./img/logo.svg" width="75" height="21" alt="logo Plants">
                 </a>
             </div>
             <nav class="navbar">
@@ -73,23 +73,35 @@
         </div>
     </header>
     <main class="main">
-        <section class="section section_welcome welcome container">
-            <div class="row row-md-between">
-                <div class="is-relative col-md-4">
-                    <img class="leaf leaf_lg" width="245" height="175" src="./img/welcome/leaf 2.svg" alt="leaf">
-                    <img class="leaf leaf_md" width="180" height="140" src="./img/welcome/sheet medium.svg" alt="leaf">
-                    <img class="leaf leaf_sm" width="120" height="75" src="./img/welcome/sheet medium-medium.svg" alt="leaf">
-                    <img class="leaf leaf_xs-l" width="100" height="60" src="./img/welcome/leaf smal-left.svg" alt="leaf">
-                    <img class="leaf leaf_xs-r" width="100" height="60" src="./img/welcome/leaf small-right .svg" alt="leaf">
-                </div>
-                <div class="welcome__content col-md-6">
-                    <h1 class="title title_md is-text-grey">We grow <span class="is-text-green">plants</span> and give you oxygen</h1>
-                    <p class="text text_xs is-text-dark-grey ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <button class="button is-uppercase">learn more</button>
+        <section class="section section_welcome">
+            <div class="welcome container">
+                <div class="row row-md-between">
+                    <div class="welcome__content col-md-6 order-lg-2">
+                        <h1 class="title title_big is-text-grey">We grow <span class="is-text-green">plants</span> and give you oxygen</h1>
+                        <p class="text is-text-dark-grey ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <button class="button button_primary is-uppercase">learn more</button>
+                    </div>
+                    <div class="welcome__images is-relative col-md-5 order-lg-1">
+                        <img class="leaf leaf_lg" width="245" height="175" src="./img/welcome/leaf 2.svg" alt="leaf">
+                        <img class="leaf leaf_md" width="180" height="140" src="./img/welcome/sheet medium.svg" alt="leaf">
+                        <img class="leaf leaf_sm" width="120" height="75" src="./img/welcome/sheet medium-medium.svg" alt="leaf">
+                        <img class="leaf leaf_xs-l" width="100" height="60" src="./img/welcome/leaf smal-left.svg" alt="leaf">
+                        <img class="leaf leaf_xs-r" width="100" height="60" src="./img/welcome/leaf small-right .svg" alt="leaf">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section section_about about container"></section>
+        <section class="section section_about about container">
+            <div class="row row-md-between">
+                <div class="about__content col-md-6">
+                    <h2 class="title title_regular is-text-orange"><span class="is-text-green">We are</span> professional experienced <span class="is-text-green">gardeners</span></h2>
+                    <p class="text is-text-dark-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                </div>
+                <div class="about__images col-md-6 col-lg-6 col-xl-5 ">
+                    <img src="./img/about/460px.jpg" srcset=" ./img/about/460px.jpg 460w" sizes=" (min-width: 992px) 460px,(min-width: 768px) 350px, (min-width: 420px) 250px, 70vw" alt="">
+                </div>
+            </div>
+        </section>
         <section class="section section_service service container"></section>
         <section class="section section_prices prices container"></section>
         <section class="section section_contacts contacts container"></section>

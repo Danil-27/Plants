@@ -1,9 +1,9 @@
 .header {
+    background-color: var(--section-bg);
     &__conationer{
         display: flex;
         align-items: center;
         height: rem(96px);
-        
     }
     &__logo{
         flex: 1 0 auto;

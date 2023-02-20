@@ -360,7 +360,7 @@ body {
           justify-content: center;
 }
 
-.is-text-red {
+.is-text-orange {
   color: var(--orange);
 }
 
@@ -368,12 +368,12 @@ body {
   color: var(--green);
 }
 
-.is-text-dark-grey {
-  color: var(--dark-grey);
-}
-
 .is-text-grey {
   color: var(--grey);
+}
+
+.is-text-dark-grey {
+  color: var(--dark-grey);
 }
 
 :root {
@@ -2183,6 +2183,9 @@ body {
     display: none !important;
   }
 }
+.header {
+  background-color: var(--section-bg);
+}
 .header__conationer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2256,51 +2259,142 @@ body {
   }
 }
 .section_welcome {
-  padding-top: 3.875rem;
-  padding-bottom: 3.875rem;
+  background-color: var(--section-bg);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.section_about {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 
-.title_md {
+@media screen and (min-width: 768px) {
+  .section_welcome {
+    padding-top: 2.5rem;
+    padding-bottom: 4.375rem;
+  }
+  .section_about {
+    padding-top: 2.5rem;
+    padding-bottom: 5.9375rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section_welcome {
+    padding-top: 3.875rem;
+  }
+  .section_about {
+    padding-top: 5.9375rem;
+  }
+}
+.title {
+  font-size: 1.5625rem;
   font-weight: 700;
-  font-size: 2.8125rem;
 }
-.title_sm {
-  font-weight: 700;
-  font-size: 2.5rem;
+.title_regular {
+  font-weight: 400;
+  font-family: "Inika", sans-serif;
 }
-.title_xs {
-  font-size: 2.5rem;
-}
-
-.text_md {
-  font-weight: 700;
-  font-size: 40px;
-}
-.text_xs {
+.title__smaill {
   font-size: 1.25rem;
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.1875rem;
+  }
+  .title_medium {
+    font-size: 2.5rem;
+  }
+  .title__smaill {
+    font-size: 1.5625rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .title_big {
+    font-size: 2.8125rem;
+  }
+}
+.text_medium-xs {
+  font-size: 20px;
+}
+.text_bold {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .text_medium-md {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .text {
+    font-size: 1.25rem;
+  }
+  .text_smaill {
+    font-size: 16px;
+  }
+}
 .button {
   background: transparent;
   border: 1px solid var(--orange);
   border-radius: 5px;
   color: var(--yellow);
+  font-size: 0.9375rem;
+}
+.button_primary {
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  color: var(--black);
+  font-size: 10px;
+}
+.button_bold {
+  font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 1.25rem;
+  }
+  .button_primary {
+    font-size: 1rem;
+  }
+}
 .welcome__content {
   padding-top: 2.375rem;
 }
 .welcome .text {
-  padding-top: 2.5rem;
+  padding-top: 1.25rem;
 }
 .welcome .button {
   margin-top: 3rem;
   padding: 0.875rem 1.6875rem;
-  border: 2px solid var(--orange);
-  border-radius: 10px;
-  color: var(--black);
 }
 
+@media screen and (max-width: 768px) {
+  .welcome__images {
+    display: none;
+  }
+  .welcome .text {
+    padding-top: 1.875rem;
+  }
+  .welcome .button {
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .welcome__content {
+    padding-top: 0px;
+  }
+  .welcome .text {
+    padding-top: 2.5rem;
+  }
+  .welcome .button {
+    margin-top: 3rem;
+  }
+}
 .leaf {
   position: absolute;
 }
@@ -2315,6 +2409,7 @@ body {
 .leaf_sm {
   top: 210px;
   left: 250px;
+  display: none;
 }
 .leaf_xs-l {
   top: 170px;
@@ -2323,4 +2418,50 @@ body {
 .leaf_xs-r {
   top: 100px;
   left: 210px;
+}
+
+@media screen and (min-width: 900px) {
+  .leaf_sm {
+    display: block;
+  }
+}
+.about .title {
+  text-align: center;
+}
+.about .text {
+  padding-top: 1.25rem;
+}
+.about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.3125rem;
+}
+
+@media screen and (min-width: 380px) {
+  .about__images {
+    padding-top: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .title {
+    text-align: left;
+  }
+  .about .text {
+    padding-top: 2.5rem;
+  }
+  .about__images {
+    padding-top: 0px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about .title {
+    padding-top: 4.125rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

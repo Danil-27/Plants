@@ -1,9 +1,78 @@
 .text{
-    &_md {
-        font-weight: 700;
-        font-size: 40px;
+    &_medium-xs {
+        font-size: 20px; 
     }
-    &_xs {
+    &_bold {
+        font-weight: 700;
+    }
+
+
+
+ 
+    // &_welcome , &_about{
+    //     font-size: 16px;
+    // }
+    // &_service {
+    //     font-size: 16px;
+    //     // 
+    //     font-size: 20px;  medium-xs
+    // }
+    // &_prices {
+    //     font-size: 16px;
+    // }
+    // &_contacts , &_footer { medium-xs
+    //     font-size: 20px;
+    // }
+}
+
+@media screen and (min-width: 768px) {
+    .text{
+        &_medium-md {
+            font-size: 20px; 
+        }
+
+
+
+
+        // &_welcome {
+        //     font-size: 16px;
+        // }
+        // &_about , &_contacts ,&_footer { medium-xs
+        //     font-size: 20px;
+        // }
+        // &_service {
+        //     font-size: 16px;
+        //     // 
+        //     font-size: 20px; medium-xs
+        // }
+        // &_prices { medium-xs
+        //     font-size: 20px; 
+        // }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text{
         font-size: rem(20px);
+        &_smaill {
+            font-size: 16px; 
+        }
+
+
+
+
+
+
+    //     &_welcome , &_about , &_contacts , &_footer  {
+    //         font-size: 20px; 
+    //     }
+    //     &_service {
+    //         font-size: 16px;
+    //         // 
+    //         font-size: 20px;
+    //     }
+    //     &_prices {
+    //         font-size: 20px;
+    //     }
     }
 }

@@ -3,19 +3,23 @@
     border: 1px solid  var(--orange);
     border-radius: 5px;
     color: var(--yellow);
-
-    // 1 section 
-    // padding: 14px 27px;
-    // border: 2px solid #E06733;
-    // border-radius: 10px;
-
-    // 3секция
-    // padding: 12px 54px;
-    
-    // 4 section
-    // padding: 12px 30px;
+    font-size: rem(15px);
+    &_primary {
+        border: 2px solid var(--orange);
+        border-radius: 10px;
+        color: var(--black);
+        font-size: 10px;
+    }
+    &_bold {
+        font-weight: 700;
+    }
 }
-// border: 1px solid #E06733;
-// border-radius: 5px;
-// border: 1px solid #E06733;
-// border-radius: 5px;
+
+@media screen and (min-width: 768px) {
+    .button {
+        font-size: rem(20px);
+        &_primary {
+            font-size: rem(16px);
+        }
+    }
+}

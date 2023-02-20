@@ -1,0 +1,43 @@
+.about {
+    .title {
+        text-align: center;
+    }
+    .text {
+        padding-top: rem(20px);
+    }
+    &__images {
+        display: flex;
+        justify-content: center;
+        padding-top: rem(5px);
+    }
+}
+@media screen and (min-width:380px) {
+    .about {
+        &__images {
+            padding-top: rem(40px);
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .about{
+        .title {
+            text-align: left;
+        }
+        .text {
+            padding-top: rem(40px);
+        }
+        &__images {
+            padding-top: 0px;
+            justify-content: right;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .about{
+        .title {
+            padding-top: rem(66px);
+        }
+    }
+}

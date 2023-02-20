@@ -11,6 +11,7 @@
     &_sm {
         top: 210px;
         left: 250px;
+        display: none;
     }
     &_xs {
         &-l {
@@ -20,6 +21,15 @@
         &-r {
             top: 100px;
             left: 210px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .leaf {
+        &_sm {
+            display: block;
         }
     }
 }
