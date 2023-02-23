@@ -380,6 +380,17 @@ body {
   color: var(--dark-grey);
 }
 
+.wrapper-img {
+  position: relative;
+  overflow: hidden;
+}
+.wrapper-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
 :root {
   --black: #010201;
   --green: #499A18;
@@ -2522,20 +2533,24 @@ body {
   margin-top: 0.625rem;
   padding: 0.5rem 1.75rem;
 }
-.service .container-item {
+.service__gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 55px 115px;
-  grid-auto-rows: minmax(0px, 450px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-rows: auto;
+  grid-row-gap: 34px;
+  grid-column-gap: 100px;
+  justify-items: center;
+  padding-top: 2.1875rem;
 }
-.service .item {
-  border: solid 2px black;
-  background-color: cadetblue;
-  padding: 10px;
+.service__gallery .wrapper-img {
+  aspect-ratio: 5/5;
 }
+.service__gallery .wrapper-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .service_box {
     padding-top: 1.875rem;
@@ -2544,6 +2559,13 @@ body {
     margin-right: 2.375rem;
     padding: 0.75rem 2.5rem;
   }
+  .service__gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 38px;
+    padding-top: 2.1875rem;
+    padding-top: 2.5rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .service_box {
@@ -2551,5 +2573,33 @@ body {
   }
   .service .button {
     margin-top: 0px;
+  }
+  .service__gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 55px;
+    padding-top: 5.625rem;
+  }
+  .service__gallery .wrapper-img {
+    aspect-ratio: 16/17;
+  }
+}
+.gallery {
+  overflow: hidden;
+  border: 1px solid #d3d2cc;
+  border-radius: 25px 25px 20px 20px;
+  text-align: center;
+}
+.gallery__content {
+  padding: 0px 2.5rem 1.125rem 2.5rem;
+}
+.gallery .text {
+  width: 100%;
+  padding-top: 0.625rem;
+}
+
+@media screen and (min-width: 992px) {
+  .gallery__content {
+    padding: 0px 1.875rem 1.875rem 1.875rem;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+.gallery {
+    overflow: hidden;
+    border: 1px solid #d3d2cc;
+    border-radius: 25px 25px 20px 20px;
+    text-align: center;
+    &__content {
+        padding: 0px rem(40px) rem(18px) rem(40px);
+    }
+    .text {
+        width: 100%;
+        padding-top: rem(10px);
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .gallery {
+
+    }
+}
+
+@media screen and (min-width: 992px)  {
+    .gallery {
+        &__content {
+            padding: 0px rem(30px) rem(30px) rem(30px);
+        }
+    }
+}
