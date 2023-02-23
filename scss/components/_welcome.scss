@@ -1,37 +1,39 @@
 .welcome {
-    &__content {
-        padding-top: rem(38px);
+    &__images {
+        display: none;
     }
     .text {
         padding-top: rem(20px);
     }
     .button {
-        margin-top: rem(48px);
-        padding: rem(14px) rem(27px) ;
+        margin-top: rem(20px);
+        padding: rem(8px) rem(18px) ;
     }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
     .welcome {
         &__images {
-            display: none;
+            display: block;
         }
         .text {
             padding-top: rem(30px);
         }
         .button {
             margin-top: rem(30px);
+            padding: rem(14px) rem(27px) ;
         }
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .welcome {
         &__content {
-            padding-top: 0px;
+            padding-top: rem(38px);
         }
         .text {
-            padding-top: rem(40px);
+            padding-top: rem(42px);
         }
         .button {
             margin-top: rem(48px);

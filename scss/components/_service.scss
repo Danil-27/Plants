@@ -1,0 +1,68 @@
+.service {
+    &_box {
+        padding-top: rem(35px);
+    }
+    .button {
+        color: var(--orange);
+        margin-right: rem(10px);
+        margin-top: rem(10px);
+        padding: rem(8px) rem(28px);
+    }
+    &__gallery {
+    }
+
+    // обучение grid 
+
+    .container-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 55px 115px;
+        grid-auto-rows: minmax(0px , 450px);
+        justify-content: center;
+    }
+
+    .item {
+        border: solid 2px black;
+        background-color: cadetblue;
+        padding: 10px;
+		&_1 {
+		}
+		&_2 {
+		}
+		&_3 {
+		}
+		&_4 {
+		}
+		&_5 {
+		}
+		&_6 {
+		}
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) { 
+    .service {
+        &_box {
+            padding-top: rem(30px);
+        }
+        .button {
+            margin-right: rem(38px);
+            padding: rem(12px) rem(40px);
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .service {
+        &_box {
+            padding-top: 0px;
+        }
+        .button {
+            margin-top: 0px;
+        }
+    }
+}

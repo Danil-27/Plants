@@ -1,35 +1,54 @@
 .leaf {
     position: absolute;
+    &_lg , &_md , &-r , &-l {
+        aspect-ratio: 4/3;
+    }
     &_lg {
         top: 0;
         left: 0;
     }
     &_md {
-        top: 160px;
-        left: 80px;
+        top: 110px;
+        left: 60px;
     }
     &_sm {
-        top: 210px;
-        left: 250px;
-        display: none;
+        top: 150px;
+        left: 190px;
+        aspect-ratio: 8/5;
     }
     &_xs {
         &-l {
-            top: 170px;
+            top: 110px;
             left: 0; 
         }
         &-r {
-            top: 100px;
-            left: 210px;
+            top: 50px;
+            left: 130px;
         }
     }
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
     .leaf {
+        &_md {
+            top: 190px;
+            left: 80px;
+            aspect-ratio: 16/14;
+        }
         &_sm {
-            display: block;
+            top: 250px;
+            left: 300px;
+            aspect-ratio: 6/4;
+        }
+        &_xs {
+            &-l {
+                top: 185px;
+            }
+            &-r {
+                top: 110px;
+                left: 240px;
+            }
         }
     }
 }

@@ -9,12 +9,20 @@
         display: flex;
         justify-content: center;
         padding-top: rem(5px);
+        img {
+            width: 150px;
+            height: 147px;
+        }
     }
 }
 @media screen and (min-width:380px) {
     .about {
         &__images {
             padding-top: rem(40px);
+            img {
+                width: 250px;
+                height: 258px;
+            }
         }
     }
 }
@@ -30,6 +38,10 @@
         &__images {
             padding-top: 0px;
             justify-content: right;
+            img {
+                width: 464px;
+                height: 479px;
+            }
         }
     }
 }
