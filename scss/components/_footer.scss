@@ -1,0 +1,18 @@
+.footer {
+    &__github, &__school {
+        padding-bottom: rem(16px);
+    }
+    &__github {
+    }
+    &__school {
+    }
+    &__networks {
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        &:not(:last-child) {
+            padding-right: rem(20px);
+        }
+    }
+}

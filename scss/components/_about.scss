@@ -39,14 +39,6 @@
         .text {
             padding-top: rem(40px);
         }
-        &__images {
-            padding-top: 0px;
-            justify-content: right;
-            img {
-                width: 464px;
-                height: 479px;
-            }
-        }
     }
 }
 
@@ -54,6 +46,14 @@
     .about{
         .title {
             padding-top: rem(66px);
+        }
+        &__images {
+            padding-top: 0px;
+            justify-content: right;
+            img {
+                width: 464px;
+                height: 479px;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 .section { 
-    &_welcome , &_service {
+    &_welcome , &_service, &_contacts {
         background-color: var(--section-bg);
     }
     &_welcome {
@@ -17,6 +17,14 @@
     &_prices {
         padding-top: rem(25px);
         padding-bottom: rem(40px);
+    }
+    &_contacts {
+        padding-top: rem(25px);
+        padding-bottom: rem(0px);    
+    }
+    &_footer {
+        padding-top: rem(22px);
+        padding-bottom: rem(8px);        
     }
 }
 
@@ -38,6 +46,14 @@
             padding-top: rem(40px);
             padding-bottom: rem(90px);
         }
+        &_contacts {
+            padding-top: rem(40px);
+            padding-bottom: rem(0px);    
+        }
+        &_footer {
+            padding-top: rem(30px);
+            padding-bottom: rem(20px);        
+        }
     }
 }
 
@@ -55,6 +71,14 @@
         }
         &_prices {
             padding-bottom: rem(115px);
+        }
+        &_contacts {
+            padding-top: rem(60px);
+            padding-bottom: rem(0px);    
+        }
+        &_footer {
+            padding-top: rem(40px);
+            padding-bottom: rem(40px);        
         }
     }
 }

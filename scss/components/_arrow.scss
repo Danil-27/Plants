@@ -1,17 +1,18 @@
 .arrow {
     position: relative;
+    position: absolute;
     right: 40px;
-    top: 17px;
+    top: 50%;
+    transform: translate(0%,-50%);
     width: rem(16px);
     height: rem(16px);
     border-radius: 50%;
-    position: absolute;
     &::before, &::after {
         content: "";
         position: absolute;
-        width: 6px;
+        width: 5px;
         height: 1px;
-        top: 50%;
+        top:50%;
     }
     &::before  {
         left: 44%;
