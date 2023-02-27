@@ -1,9 +1,12 @@
 .welcome {
     &__images {
         display: none;
+        width: 280px;
+        height: 254px;
     }
     .text {
         padding-top: rem(20px);
+        line-height: 1.56;
     }
     .button {
         margin-top: rem(20px);
@@ -19,6 +22,7 @@
         }
         .text {
             padding-top: rem(30px);
+            line-height: 1.75;
         }
         .button {
             margin-top: rem(30px);
@@ -29,6 +33,10 @@
 
 @media screen and (min-width: 992px) {
     .welcome {
+        &__images {
+            width: 448px;
+            height: 407px;
+        }
         &__content {
             padding-top: rem(38px);
         }

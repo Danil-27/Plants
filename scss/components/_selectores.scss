@@ -1,0 +1,24 @@
+.selectores {
+    position: relative;
+    max-width: rem(250px);
+    max-height: rem(55px);
+    background-color: var(--section-bg);
+    padding: rem(16px) rem(110px) rem(16px) rem(40px);
+    border-radius: 20px;
+    font-weight: 700;
+    &:nth-of-type(2), &:nth-of-type(1) {
+        margin-bottom: rem(32px);
+    }
+    .arrow {
+        background-color:  #D9D9D9;
+        &::before, &::after {
+            background-color: var(--black);
+        }
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .selectores {
+        font-size: rem(20px);
+    }
+}

@@ -1,29 +1,54 @@
 .leaf {
     position: absolute;
-    &_lg , &_md , &-r , &-l {
-        aspect-ratio: 4/3;
-    }
     &_lg {
         top: 0;
         left: 0;
+        width: 190px;
+        height: 140px;
     }
     &_md {
-        top: 110px;
-        left: 60px;
+        top: 135px;
+        left: 65px;
+        width: 130px;
+        height: 130px;
     }
     &_sm {
-        top: 150px;
-        left: 190px;
-        aspect-ratio: 8/5;
+        top: 165px;
+        left: 195px;
+        width: 95px;
+        height: 68px;
     }
     &_xs {
+        width: 70px;
+        height: 68px;
         &-l {
-            top: 110px;
+            top: 130px;
             left: 0; 
         }
         &-r {
-            top: 50px;
-            left: 130px;
+            top: 70px;
+            left: 165px;
+        }
+    }
+
+
+    &_prices-lg {
+        top: 0;
+        left: 0;
+    }
+    &_prices-md {
+        top: 85px;
+        left: 50px;
+    }
+    &_prices-xs {
+        
+        &-r {
+            top: 86px;
+            left: 5px;
+        }
+        &-l {
+            top: 45px;
+            left: 100px;
         }
     }
 }
@@ -31,23 +56,33 @@
 
 @media screen and (min-width: 992px) {
     .leaf {
+        &_lg {
+            width: 305px;
+            height: 207px;
+        }
         &_md {
             top: 190px;
-            left: 80px;
-            aspect-ratio: 16/14;
+            left: 110px;
+            width: 200px;
+            height: 210px;
         }
         &_sm {
-            top: 250px;
+            top: 265px;
             left: 300px;
-            aspect-ratio: 6/4;
+            width: 180px;
+            height: 100px;
         }
         &_xs {
+            width: 120px;
+            height: 120px;
             &-l {
-                top: 185px;
+                top: 200px;
+                left: 0px;
             }
             &-r {
                 top: 110px;
-                left: 240px;
+                left: 260px;
+
             }
         }
     }

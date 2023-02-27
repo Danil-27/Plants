@@ -14,6 +14,10 @@
         padding-top: rem(30px);
         padding-bottom: rem(30px);
     }
+    &_prices {
+        padding-top: rem(25px);
+        padding-bottom: rem(40px);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -30,6 +34,10 @@
             padding-top: rem(60px);
             padding-bottom: rem(70px);
         }
+        &_prices {
+            padding-top: rem(40px);
+            padding-bottom: rem(90px);
+        }
     }
 }
 
@@ -44,6 +52,9 @@
         &_service {
             padding-top: rem(40px);
             padding-bottom: rem(120px);
+        }
+        &_prices {
+            padding-bottom: rem(115px);
         }
     }
 }

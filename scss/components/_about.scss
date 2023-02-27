@@ -4,6 +4,7 @@
     }
     .text {
         padding-top: rem(20px);
+        line-height: 1.666;
     }
     &__images {
         display: flex;
@@ -17,6 +18,9 @@
 }
 @media screen and (min-width:380px) {
     .about {
+        .text {
+            line-height: 1.5;
+        }
         &__images {
             padding-top: rem(40px);
             img {

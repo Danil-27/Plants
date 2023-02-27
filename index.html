@@ -81,12 +81,14 @@
                         <p class="text is-text-dark-grey ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         <button class="button button_primary is-uppercase">learn more</button>
                     </div>
-                    <div class="welcome__images is-relative col-md-5 order-lg-1">
-                        <img class="leaf leaf_lg" src="./img/welcome/leaf_lg-285w.svg" srcset="./img/welcome/leaf_lg-285w.svg 285w, ./img/welcome/leaf_media-768w-992w/leaf_lg-153w.svg 155w" sizes="(min-width: 992px) 285px, 155px" alt="leaf">
-                        <img class="leaf leaf_md" src="./img/welcome/leaf_md-163w.svg" srcset="./img/welcome/leaf_md-163w.svg 165w, ./img/welcome/leaf_media-768w-992w/leaf_md-102w.svg 105w" sizes="(min-width: 992px) 165px, 105px" alt="leaf">
-                        <img class="leaf leaf_sm" src="./img/welcome/leaf_sm-120w.svg" srcset="./img/welcome/leaf_sm-120w.svg 120w, ./img/welcome/leaf_media-768w-992w/leaf_sm-75w.svg 75w" sizes="(min-width: 992px) 120px, 75px" alt="leaf">
-                        <img class="leaf leaf_xs-l" src="./img/welcome/leaf_xs-l-80w.svg" srcset="./img/welcome/leaf_xs-l-80w.svg 80w, ./img/welcome/leaf_media-768w-992w/leaf_xs-l-50w.svg 50w" sizes="(min-width: 992px) 80px, 50px" alt="leaf">
-                        <img class="leaf leaf_xs-r" src="./img/welcome/leaf_xs-r-80w.svg" srcset="./img/welcome/leaf_xs-r-80w.svg 80w, ./img/welcome/leaf_media-768w-992w/leaf_xs-r-50w.svg 50w" sizes="(min-width: 992px) 80px, 50px" alt="leaf">
+                    <div class="col-md-5 order-lg-1">
+                        <div class="welcome__images is-relative">
+                            <img class="leaf leaf_lg" src="./img/welcome/leaf_lg-285w.svg" alt="leaf">
+                            <img class="leaf leaf_md" src="./img/welcome/leaf_md-163w.svg" alt="leaf">
+                            <img class="leaf leaf_sm" src="./img/welcome/leaf_sm-120w.svg" alt="leaf">
+                            <img class="leaf leaf_xs leaf_xs-l" src="./img/welcome/leaf_xs-l-80w.svg" alt="leaf">
+                            <img class="leaf leaf_xs leaf_xs-r" src="./img/welcome/leaf_xs-r-80w.svg" alt="leaf">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,8 +160,49 @@
                 </div>
             </div>
         </section>
-        <section class="section section_prices prices container"></section>
-        <section class="section section_contacts contacts container"></section>
+        <section class="section section_prices prices container">
+            <div class="row row-md-between">
+                <div class="prices__selectores col-md-5">
+                    <p class="prices__heading">Prices</p>
+                    <div class="prices__selectores__wrapper">
+                        <div class="selectores">
+                            Basics<div class="arrow"></div>
+                        </div>
+                        <div class="selectores">
+                            Standard<div class="arrow"></div>
+                        </div>
+                        <div class="selectores">
+                            Pro care <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices__content col-md-7 col-md-6">
+                    <h2 class="title "><span class="is-block">Our best <span class="is-text-green">gardeners</span> are</span> ready to help you</h2>
+                    <button class="button">Contact us</button>
+                    <div class="prices__images">
+                        <img class="leaf leaf_prices-lg" src="./img/prices/leaf_lg-w.svg" alt="leaf">
+                        <img class="leaf leaf_prices-md" src="./img/prices/leaf_md-w.svg" alt="leaf">
+                        <img class="leaf leaf_prices-xs leaf_prices-xs-r" src="./img/prices/leaf_xs-l-w.svg" alt="leaf">
+                        <img class="leaf leaf_prices-xs leaf_prices-xs-l" src="./img/prices/leaf_xs-r-w.svg" alt="leaf">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_contacts contacts container">
+            <div class="row">
+                <div class="contacts__images col-lg-4">
+                    <img src="./img/contacts/contact_woman 1.png" alt="">
+                </div>
+                <div class="contacts__title  col-lg-3">
+                    <h2 class="title titlle_medium is-text-green">Contact us</h2>
+                </div>
+                <div class="contacts__dropdown col-lg-4">
+                    <div class="dropdown">
+                        City
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="" async></script>
