@@ -3,7 +3,6 @@
         padding-top: rem(35px);
     }
     .button {
-        color: var(--orange);
         margin-right: rem(10px);
         margin-top: rem(10px);
         padding: rem(8px) rem(28px);
@@ -16,7 +15,7 @@
         grid-row-gap: 34px;
         grid-column-gap: 100px;
         justify-items: center;
-        padding-top: rem(35px);
+        padding-top: rem(40px);
         .wrapper-img {
             aspect-ratio: 5/5;
             img {
@@ -29,7 +28,7 @@
 @media screen and (min-width: 768px) { 
     .service {
         &_box {
-            padding-top: rem(30px);
+            padding-top: rem(40px);
         }
         .button {
             margin-right: rem(38px);
@@ -39,8 +38,6 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(3, auto);
             grid-row-gap: 38px;
-            padding-top: rem(35px);
-            padding-top: rem(40px);
         }
     }
 }

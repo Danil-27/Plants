@@ -10,7 +10,7 @@
     &__selectores__wrapper {
         display: inline-block;
         padding: rem(30px) rem(22px);
-        border: 1px solid #E3E1D5;
+        border: 2px solid var(--dark-white);
         border-radius: 20px;
     }
     .title {
@@ -19,8 +19,7 @@
     }
     .button {
         padding: rem(12px) rem(30px);
-        margin-top: rem(15px);
-        color: var(--orange);
+        margin-top: rem(14px);
     }
     &__images {
         display: none;
@@ -30,14 +29,14 @@
 @media screen and (min-width: 768px)  {
     .prices {
         &__selectores {
-            text-align:start;
+            text-align: start;
         }
         &__heading {
             padding-bottom: rem(50px);
             font-size: rem(35px);
         }
         &__selectores__wrapper {
-            padding: rem(34px) rem(41px);
+            padding: rem(34px) rem(40px);
         }
         &__content {
             text-align: right;

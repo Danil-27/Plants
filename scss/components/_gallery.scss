@@ -9,12 +9,11 @@
     .text {
         width: 100%;
         padding-top: rem(10px);
-    }
-}
-
-@media screen and (min-width: 768px)  {
-    .gallery {
-
+        overflow: hidden; // скрываем излишки контента 
+        text-overflow: ellipsis; // добовляем троеточие к концу 
+        display: -webkit-box;  // Учитываем кроссбраузерность
+        -webkit-line-clamp: 2; // Указываем кол-во строк
+        -webkit-box-orient: vertical; // Устанавливаем вертикальную ориентацию элемента
     }
 }
 

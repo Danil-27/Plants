@@ -1,25 +1,21 @@
 .section { 
     &_welcome , &_service, &_contacts {
-        background-color: var(--section-bg);
+        background-color: var(--dark-white);
+    }
+    &_welcome, &_prices, &_contacts {
+        padding-top: rem(25px);
     }
     &_welcome {
-        padding-top: rem(24px);
         padding-bottom: rem(24px);
     }
-    &_about {
-        padding-top: rem(30px);
-        padding-bottom: rem(30px);
-    }
-    &_service {
+    &_about , &_service {
         padding-top: rem(30px);
         padding-bottom: rem(30px);
     }
     &_prices {
-        padding-top: rem(25px);
         padding-bottom: rem(40px);
     }
     &_contacts {
-        padding-top: rem(25px);
         padding-bottom: rem(0px);    
     }
     &_footer {
@@ -30,25 +26,20 @@
 
 @media screen and (min-width: 768px) {
     .section { 
-        &_welcome {
+        &_welcome, &_about, &_prices, &_contacts {
             padding-top: rem(40px);
+        }
+        &_welcome,  &_service {
             padding-bottom: rem(70px);
         }
         &_about {
-            padding-top: rem(40px);
             padding-bottom: rem(95px);
         }
         &_service {
             padding-top: rem(60px);
-            padding-bottom: rem(70px);
         }
         &_prices {
-            padding-top: rem(40px);
             padding-bottom: rem(90px);
-        }
-        &_contacts {
-            padding-top: rem(40px);
-            padding-bottom: rem(0px);    
         }
         &_footer {
             padding-top: rem(30px);
@@ -65,8 +56,10 @@
         &_about {
             padding-top: rem(95px);
         }
-        &_service {
+        &_service,  &_footer {
             padding-top: rem(40px);
+        }
+        &_service {
             padding-bottom: rem(120px);
         }
         &_prices {
@@ -74,10 +67,8 @@
         }
         &_contacts {
             padding-top: rem(60px);
-            padding-bottom: rem(0px);    
         }
         &_footer {
-            padding-top: rem(40px);
             padding-bottom: rem(40px);        
         }
     }

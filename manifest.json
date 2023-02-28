@@ -1,16 +1,31 @@
 {
     "name": "Plants",
     "short_name": "Plants",
+    "theme_color": "#50db53",
+    "background_color": "#2196f3",
+    "display": "browser",
+    "orientation": "portrait",
+    "start_url": ".",
     "icons": [{
-          "src": "images/manifest/manifest-20x20.svg",
-          "sizes": "20x20",
-          "type": "image/svg"
-        }, {
-          "src": "images/manifest/manifest-100x100.svg",
-          "sizes": "100x100",
-          "type": "image/svg"
-        }],
-    "start_url": "https://clinquant-meringue-3eee66.netlify.app/",
-    "display": "browser"
+          "src": "img/manifest/98.png",
+          "sizes": "98x98",
+          "type": "image/png"
+        },
+        {
+            "src": "img/manifest/144.png",
+            "sizes": "114x114",
+            "type": "image/png"
+        },
+        {
+            "src": "img/manifest/256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/manifest/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
   }
   

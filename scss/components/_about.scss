@@ -22,7 +22,7 @@
             line-height: 1.5;
         }
         &__images {
-            padding-top: rem(40px);
+            padding-top: rem(38px);
             img {
                 width: 250px;
                 height: 258px;
@@ -33,9 +33,6 @@
 
 @media screen and (min-width:768px) {
     .about{
-        .title {
-            text-align: left;
-        }
         .text {
             padding-top: rem(40px);
         }
@@ -45,6 +42,7 @@
 @media screen and (min-width:992px) {
     .about{
         .title {
+            text-align: left;
             padding-top: rem(66px);
         }
         &__images {

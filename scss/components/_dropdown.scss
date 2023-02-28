@@ -4,11 +4,11 @@
     padding: rem(5px) rem(20px) rem(5px) rem(20px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #D6E7D2;
-    color: #717171;
+    color: var(--grey);
     .arrow {
-        background-color:   #AEA1A1;
+        background-color: #AEA1A1;
         &::before, &::after {
-            background-color:  #FFFFFF;
+            background-color:  var(--white);
         }
     }
 }

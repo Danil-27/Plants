@@ -392,12 +392,13 @@ body {
 }
 
 :root {
+  --white: #fff;
   --black: #010201;
   --green: #499A18;
   --orange: #E06733;
   --grey: #717171;
   --dark-grey: #636060;
-  --section-bg: #EDF2EC;
+  --dark-white: #EDF2EC;
 }
 
 .container {
@@ -2199,7 +2200,7 @@ body {
   }
 }
 .header {
-  background-color: var(--section-bg);
+  background-color: var(--dark-white);
 }
 .header__container {
   display: -webkit-box;
@@ -2256,7 +2257,8 @@ body {
 .burger {
   display: block;
   width: 4.375rem;
-  padding: 0.9375rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin-right: 0.3125rem;
 }
 .burger__line {
   display: block;
@@ -2274,26 +2276,22 @@ body {
   }
 }
 .section_welcome, .section_service, .section_contacts {
-  background-color: var(--section-bg);
+  background-color: var(--dark-white);
+}
+.section_welcome, .section_prices, .section_contacts {
+  padding-top: 1.5625rem;
 }
 .section_welcome {
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.section_about {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-}
-.section_service {
+.section_about, .section_service {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
 }
 .section_prices {
-  padding-top: 1.5625rem;
   padding-bottom: 2.5rem;
 }
 .section_contacts {
-  padding-top: 1.5625rem;
   padding-bottom: 0rem;
 }
 .section_footer {
@@ -2302,25 +2300,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .section_welcome {
+  .section_welcome, .section_about, .section_prices, .section_contacts {
     padding-top: 2.5rem;
+  }
+  .section_welcome, .section_service {
     padding-bottom: 4.375rem;
   }
   .section_about {
-    padding-top: 2.5rem;
     padding-bottom: 5.9375rem;
   }
   .section_service {
     padding-top: 3.75rem;
-    padding-bottom: 4.375rem;
   }
   .section_prices {
-    padding-top: 2.5rem;
     padding-bottom: 5.625rem;
-  }
-  .section_contacts {
-    padding-top: 2.5rem;
-    padding-bottom: 0rem;
   }
   .section_footer {
     padding-top: 1.875rem;
@@ -2334,8 +2327,10 @@ body {
   .section_about {
     padding-top: 5.9375rem;
   }
-  .section_service {
+  .section_service, .section_footer {
     padding-top: 2.5rem;
+  }
+  .section_service {
     padding-bottom: 7.5rem;
   }
   .section_prices {
@@ -2343,10 +2338,8 @@ body {
   }
   .section_contacts {
     padding-top: 3.75rem;
-    padding-bottom: 0rem;
   }
   .section_footer {
-    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
@@ -2358,7 +2351,7 @@ body {
   font-weight: 400;
   font-family: "Inika", sans-serif;
 }
-.title__smaill {
+.title_smaill {
   font-size: 1.25rem;
 }
 
@@ -2369,7 +2362,7 @@ body {
   .title_medium {
     font-size: 2.5rem;
   }
-  .title__smaill {
+  .title_smaill {
     font-size: 1.5625rem;
   }
 }
@@ -2382,7 +2375,7 @@ body {
   }
 }
 .text_medium-xs {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .text_bold {
   font-weight: 700;
@@ -2390,7 +2383,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .text_medium-md {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2398,21 +2391,29 @@ body {
     font-size: 1.25rem;
   }
   .text_smaill {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .button {
   background: transparent;
   border: 1px solid var(--orange);
   border-radius: 5px;
-  color: var(--yellow);
+  color: var(--orange);
   font-size: 0.9375rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 .button_primary {
   border: 2px solid var(--orange);
   border-radius: 10px;
   color: var(--black);
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 .button_bold {
   font-weight: 700;
@@ -2574,7 +2575,7 @@ body {
     line-height: 1.5;
   }
   .about__images {
-    padding-top: 2.5rem;
+    padding-top: 2.375rem;
   }
   .about__images img {
     width: 250px;
@@ -2582,15 +2583,13 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .about .title {
-    text-align: left;
-  }
   .about .text {
     padding-top: 2.5rem;
   }
 }
 @media screen and (min-width: 992px) {
   .about .title {
+    text-align: left;
     padding-top: 4.125rem;
   }
   .about__images {
@@ -2608,7 +2607,6 @@ body {
   padding-top: 2.1875rem;
 }
 .service .button {
-  color: var(--orange);
   margin-right: 0.625rem;
   margin-top: 0.625rem;
   padding: 0.5rem 1.75rem;
@@ -2621,7 +2619,7 @@ body {
   grid-row-gap: 34px;
   grid-column-gap: 100px;
   justify-items: center;
-  padding-top: 2.1875rem;
+  padding-top: 2.5rem;
 }
 .service__gallery .wrapper-img {
   aspect-ratio: 5/5;
@@ -2633,7 +2631,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .service_box {
-    padding-top: 1.875rem;
+    padding-top: 2.5rem;
   }
   .service .button {
     margin-right: 2.375rem;
@@ -2643,8 +2641,6 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 38px;
-    padding-top: 2.1875rem;
-    padding-top: 2.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2676,6 +2672,11 @@ body {
 .gallery .text {
   width: 100%;
   padding-top: 0.625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 @media screen and (min-width: 992px) {
@@ -2694,7 +2695,7 @@ body {
 .prices__selectores__wrapper {
   display: inline-block;
   padding: 1.875rem 1.375rem;
-  border: 1px solid #E3E1D5;
+  border: 2px solid var(--dark-white);
   border-radius: 20px;
 }
 .prices .title {
@@ -2703,8 +2704,7 @@ body {
 }
 .prices .button {
   padding: 0.75rem 1.875rem;
-  margin-top: 0.9375rem;
-  color: var(--orange);
+  margin-top: 0.875rem;
 }
 .prices__images {
   display: none;
@@ -2719,7 +2719,7 @@ body {
     font-size: 2.1875rem;
   }
   .prices__selectores__wrapper {
-    padding: 2.125rem 2.5625rem;
+    padding: 2.125rem 2.5rem;
   }
   .prices__content {
     text-align: right;
@@ -2749,7 +2749,7 @@ body {
   position: relative;
   max-width: 15.625rem;
   max-height: 3.4375rem;
-  background-color: var(--section-bg);
+  background-color: var(--dark-white);
   padding: 1rem 6.875rem 1rem 2.5rem;
   border-radius: 20px;
   font-weight: 700;
@@ -2868,13 +2868,13 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #D6E7D2;
-  color: #717171;
+  color: var(--grey);
 }
 .dropdown .arrow {
   background-color: #AEA1A1;
 }
 .dropdown .arrow::before, .dropdown .arrow::after {
-  background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 768px) {

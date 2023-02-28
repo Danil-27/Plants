@@ -5,7 +5,7 @@
         font-weight: 400;
         font-family: "Inika", sans-serif;
     }
-    &__smaill { // prices 
+    &_smaill { // prices 
         font-size: rem(20px);
     }
 }
@@ -13,10 +13,10 @@
 @media screen and (min-width: 768px) {
     .title {
         font-size: rem(35px);   
-        &_medium { // Contact
+        &_medium {
             font-size: rem(40px);
         }
-        &__smaill { // prices
+        &_smaill { 
             font-size: rem(25px);
         }
     }
@@ -25,7 +25,7 @@
 @media screen and (min-width: 992px) {
     .title {
         font-size: rem(40px);
-        &_big { // welcome
+        &_big {
             font-size: rem(45px);
         }
     }
