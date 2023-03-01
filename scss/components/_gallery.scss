@@ -1,6 +1,7 @@
 .gallery {
+    width: 100%;
     overflow: hidden;
-    border: 1px solid #d3d2cc;
+    border: 1px solid #E3E1D5;
     border-radius: 25px 25px 20px 20px;
     text-align: center;
     &__content {
@@ -17,6 +18,18 @@
     }
 }
 
+@media screen and (min-width: 428px)  {
+    .gallery {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .gallery {
+        width: 100%;
+        height: auto;
+    }
+}
 @media screen and (min-width: 992px)  {
     .gallery {
         &__content {
