@@ -5,6 +5,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #D6E7D2;
     color: var(--grey);
+    &_mg-t {
+        margin-top: rem(80px);
+    }
     .arrow {
         background-color: #AEA1A1;
         &::before, &::after {
@@ -14,13 +17,19 @@
 }
 
 @media screen and (min-width: 768px)  {
-    .selectores {
+    .dropdown {
         font-size: rem(20px);
+        &_mg-t {
+            margin-top: rem(100px);
+        }
     }
 }
 
 @media screen and (min-width: 992px)  {
     .dropdown {
         padding: rem(5px) rem(35px) rem(5px) rem(20px);
+        &_mg-t {
+            margin-top: rem(64px);
+        }
     }
 }

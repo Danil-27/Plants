@@ -5,22 +5,128 @@
     &_welcome, &_prices, &_contacts {
         padding-top: rem(25px);
     }
-    &_welcome {
-        padding-bottom: rem(24px);
-    }
     &_about , &_service {
         padding-top: rem(30px);
         padding-bottom: rem(30px);
     }
+    &_welcome {
+        .section__images {
+            display: none;
+            width: 280px;
+            height: 254px;
+        }
+        padding-bottom: rem(24px);
+        .text {
+            padding-top: rem(20px);
+            line-height: 1.56;
+        }
+        .button {
+            margin-top: rem(20px);
+            padding: rem(8px) rem(18px) ;
+        }
+    }
+    &_about {
+        .title {
+            text-align: center;
+        }
+        .text {
+            padding-top: rem(20px);
+            line-height: 1.666;
+        }
+        .section__images {
+            display: flex;
+            justify-content: center;
+            padding-top: rem(5px);
+            img {
+                width: 150px;
+                height: 147px;
+            }
+        }
+    }
+    &_service {
+        .section_box {
+            padding-top: rem(35px);
+        }
+        .button {
+            margin-right: rem(10px);
+            margin-top: rem(10px);
+            padding: rem(8px) rem(28px);
+        }
+    }
     &_prices {
         padding-bottom: rem(40px);
+        .section__selectores , .section__content {
+            text-align: center;
+        }
+        .section__heading {
+            padding-bottom: rem(40px);
+            font-weight: 700;
+            font-size:  rem(25px);
+        }
+        .section__wrapper {
+            display: inline-block;
+            padding: rem(30px) rem(22px);
+            border: 2px solid var(--dark-white);
+            border-radius: 20px;
+        }
+        .title {
+            padding-top: rem(20px);
+            line-height: 1.75;
+        }
+        .button {
+            padding: rem(12px) rem(30px);
+            margin-top: rem(14px);
+        }
+        .section__images {
+            display: none;
+        }
     }
     &_contacts {
         padding-bottom: rem(0px);    
+        .text {
+            line-height: 2;
+        }
+        .section__images {
+            padding-top: rem(132px);
+            img {
+                margin: -4px;
+                width: 100px;
+                height: 124px;
+            }
+        }
     }
     &_footer {
         padding-top: rem(22px);
-        padding-bottom: rem(8px);        
+        padding-bottom: rem(8px);    
+        .section__github, .section__school {
+            padding-bottom: rem(16px);
+        }
+        .section__networks {
+            display: flex;
+            justify-content: center;
+        }
+        .section__link {
+            &:not(:last-child) {
+                padding-right: rem(20px);
+            }
+        }    
+    }
+}
+
+@media screen and (min-width:380px) {
+    .section {
+        &_about {
+            .text {
+                line-height: 1.5;
+            }
+            .section__images {
+                padding-top: rem(38px);
+                img {
+                    width: 250px;
+                    height: 258px;
+                }
+            }
+        }
     }
 }
 
@@ -32,14 +138,75 @@
         &_welcome,  &_service {
             padding-bottom: rem(70px);
         }
+        &_welcome {
+            .section__images {
+                display: block;
+            }
+            .text {
+                padding-top: rem(30px);
+                line-height: 1.75;
+            }
+            .button {
+                margin-top: rem(30px);
+                padding: rem(14px) rem(27px) ;
+            }
+        }
         &_about {
             padding-bottom: rem(95px);
+            .text {
+                padding-top: rem(40px);
+            }
         }
         &_service {
             padding-top: rem(60px);
+            .service {
+                .section_box {
+                    padding-top: rem(40px);
+                }
+                .button {
+                    margin-right: rem(38px);
+                    padding: rem(12px) rem(40px);
+                }
+            }
         }
         &_prices {
             padding-bottom: rem(90px);
+            .section__selectores {
+                text-align: start;
+            }
+            .section__heading {
+                padding-bottom: rem(50px);
+                font-size: rem(35px);
+            }
+            .section__wrapper {
+                padding: rem(34px) rem(40px);
+            }
+            .section__content {
+                text-align: right;
+            }
+            .title {
+                padding-top: 0px;
+            }
+            .button {
+                margin-top: rem(20px);
+            }
+            .section__images {
+                display: block;
+                position: relative;
+                margin-top: rem(34px);
+                width: 155px;
+                height: 175px;
+                margin-left: auto;
+            }
+        &_contacts {
+            .section__images {
+                padding-top: rem(250px);
+                img {
+                    width: 200px;
+                    height: 250px;
+                }
+            }
+        }
         }
         &_footer {
             padding-top: rem(30px);
@@ -48,28 +215,92 @@
     }
 }
 
+@media screen and (max-width: 991px)  {
+    .section {
+        &_contacts {
+            .section__images {
+                order: 3;
+            }
+            .section__title {
+                order: 1;
+            }
+            .section__dropdown {
+                order: 2;
+            }
+            .section__images , .section__dropdown,  .section__title  {
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 992px){
     .section { 
         &_welcome {
+            .section__images {
+                width: 448px;
+                height: 407px;
+            }
+            .section__content {
+                padding-top: rem(38px);
+            }
             padding-top: rem(62px);
+            .text {
+                padding-top: rem(42px);
+            }
+            .button {
+                margin-top: rem(48px);
+            }
         }
         &_about {
             padding-top: rem(95px);
+            .title {
+                text-align: left;
+                padding-top: rem(66px);
+            }
+            .section__images {
+                padding-top: 0px;
+                justify-content: right;
+                img {
+                    width: 464px;
+                    height: 479px;
+                }
+            }
         }
         &_service,  &_footer {
             padding-top: rem(40px);
         }
         &_service {
             padding-bottom: rem(120px);
+            .section_box {
+                padding-top: 0px;
+            }
+            .button {
+                margin-top: 0px;
+            }
         }
         &_prices {
             padding-bottom: rem(115px);
+            .section__heading {
+                padding-bottom: rem(60px);
+                font-size: rem(40px);
+            }
         }
         &_contacts {
             padding-top: rem(60px);
+            .section__images {
+                padding-top: rem(0px);
+                img {
+                    width: 400px;
+                    height: 496px;
+                }
+            }
         }
         &_footer {
             padding-bottom: rem(40px);        
+            .section__github, .section__school {
+                padding-bottom: 0px;
+            }
         }
     }
 }

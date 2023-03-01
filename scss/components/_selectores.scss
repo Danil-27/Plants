@@ -1,4 +1,4 @@
-.selectores {
+.selector {
     position: relative;
     max-width: rem(250px);
     max-height: rem(55px);
@@ -6,7 +6,7 @@
     padding: rem(16px) rem(110px) rem(16px) rem(40px);
     border-radius: 20px;
     font-weight: 700;
-    &:nth-of-type(2), &:nth-of-type(1) {
+    &_mg-b {
         margin-bottom: rem(32px);
     }
     .arrow {
@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 768px)  {
-    .selectores {
+    .selector {
         font-size: rem(20px);
     }
 }
