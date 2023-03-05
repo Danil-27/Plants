@@ -44,7 +44,7 @@
         }
     }
     &_service {
-        .section_box {
+        .section__box {
             padding-top: rem(35px);
         }
         .button {
@@ -160,7 +160,7 @@
         &_service {
             padding-top: rem(60px);
             .service {
-                .section_box {
+                .section__box {
                     padding-top: rem(40px);
                 }
                 .button {
@@ -272,7 +272,7 @@
         }
         &_service {
             padding-bottom: rem(120px);
-            .section_box {
+            .section__box {
                 padding-top: 0px;
             }
             .button {

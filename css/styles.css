@@ -2320,7 +2320,7 @@ body {
   width: 150px;
   height: 147px;
 }
-.section_service .section_box {
+.section_service .section__box {
   padding-top: 2.1875rem;
 }
 .section_service .button {
@@ -2428,7 +2428,7 @@ body {
   .section_service {
     padding-top: 3.75rem;
   }
-  .section_service .service .section_box {
+  .section_service .service .section__box {
     padding-top: 2.5rem;
   }
   .section_service .service .button {
@@ -2537,7 +2537,7 @@ body {
   .section_service {
     padding-bottom: 7.5rem;
   }
-  .section_service .section_box {
+  .section_service .section__box {
     padding-top: 0px;
   }
   .section_service .button {
@@ -2741,6 +2741,9 @@ body {
   justify-items: center;
   padding-top: 2.5rem;
 }
+.gallery__item {
+  width: 100%;
+}
 .gallery .wrapper-img {
   aspect-ratio: 5/5;
 }
@@ -2748,12 +2751,33 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.gallery__content {
+  padding: 0px 2.5rem 1.125rem 2.5rem;
+}
+.gallery .text {
+  width: 100%;
+  padding-top: 0.625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
+@media screen and (min-width: 428px) {
+  .gallery__item {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 768px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 38px;
+  }
+  .gallery__item {
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2768,41 +2792,12 @@ body {
   }
 }
 .card {
-  width: 100%;
   overflow: hidden;
   border: 1px solid #E3E1D5;
   border-radius: 25px 25px 20px 20px;
   text-align: center;
 }
-.card__content {
-  padding: 0px 2.5rem 1.125rem 2.5rem;
-}
-.card .text {
-  width: 100%;
-  padding-top: 0.625rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
 
-@media screen and (min-width: 428px) {
-  .card {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .card {
-    width: 100%;
-    height: auto;
-  }
-}
-@media screen and (min-width: 992px) {
-  .card__content {
-    padding: 0px 1.875rem 1.875rem 1.875rem;
-  }
-}
 .selector {
   position: relative;
   max-width: 15.625rem;
