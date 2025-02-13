@@ -1,0 +1,33 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	right: -100vw;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: auto;
+	background-color: var(--green-light);
+	transition: right 0.6s;
+	display: flex;
+	justify-content: center;
+	z-index: 5;
+}
+
+.navbar-active {
+	top: 0;
+	right: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		position: static;
+		display: block;
+		width: auto;
+		height: auto;
+		align-items: flex-start;
+		justify-content: flex-start;
+		transition: right 0s;
+		background-color: transparent;
+		overflow-y: hidden;
+		z-index: 0;
+	}
+}

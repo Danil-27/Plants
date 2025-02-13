@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='html' lang="en">
 
 <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="manifest" href="./manifest.json">
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="mobile-web-app-capable" content="yes">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -38,7 +38,7 @@
 
 <body class="body">
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container container">
                 <div class="header__logo">
                     <a class="logo" href="./index.html">
@@ -49,24 +49,24 @@
                     <div class="navbar__menu">
                         <div class="menu">
                             <div class="menu__item">
-                                <a class="menu__link" href="./index.html">Home</a>
+                                <a class="menu__link" href="#header">Home</a>
                             </div>
                             <div class="menu__item">
-                                <a class="menu__link" href="./index.html">About us</a>
+                                <a class="menu__link" href="#about">About us</a>
                             </div>
                             <div class="menu__item">
-                                <a class="menu__link" href="./index.html">Service</a>
+                                <a class="menu__link" href="#service">Service</a>
                             </div>
                             <div class="menu__item">
-                                <a class="menu__link" href="./index.html">Price</a>
+                                <a class="menu__link" href="#price">Price</a>
                             </div>
                             <div class="menu__item">
-                                <a class="menu__link" href="./index.html">Contacts</a>
+                                <a class="menu__link" href="#contacts">Contacts</a>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <span class="burger">
+                <span id="burger" class="burger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_about container">
+            <section class="section section_about container" id="about">
                 <div class="row row-md-between">
                     <div class="col-lg-6">
                         <h2 class="title title_regular is-text-orange"><span class="is-block"><span class="is-text-green">We are</span> professional </span>experienced <span class="is-text-green">gardeners</span></h2>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_service">
+            <section class="section section_service" id="service">
                 <div class="container">
                     <div class="row row-lg-align-center">
                         <h2 class="title title_regular is-text-green col-lg-4">Service and our <span class="is-block">projects</span></h2>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_prices container">
+            <section class="section section_prices container" id="price">
                 <div class="row row-md-between">
                     <div class="section__selectores col-md-5">
                         <p class="section__heading">Prices</p>
@@ -202,7 +202,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_contacts contacts">
+            <section class="section section_contacts contacts" id="contacts">
                 <div class="container">
                     <div class="row row-center row-lg-start">
                         <div class="section__images col-lg-5">
@@ -252,6 +252,7 @@
             </div>
         </footer>
     </div>
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>
