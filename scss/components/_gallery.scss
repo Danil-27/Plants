@@ -1,65 +1,66 @@
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-auto-rows: auto;
-    grid-row-gap: 34px;
-    grid-column-gap: 100px;
-    justify-items: center;
-    padding-top: rem(40px);
-    
-    &__item {
-        width: 100%;
-    }
-    .wrapper-img {
-        aspect-ratio: 5/5;
-        img {
-            object-fit: cover;
-        }
-    }
-    &__content {
-        padding: 0px rem(40px) rem(18px) rem(40px);
-    }
-    .text {
-        width: 100%;
-        padding-top: rem(10px);
-        overflow: hidden; // скрываем излишки контента 
-        text-overflow: ellipsis; // добовляем троеточие к концу 
-        display: -webkit-box;  // Учитываем кроссбраузерность
-        -webkit-line-clamp: 2; // Указываем кол-во строк
-        -webkit-box-orient: vertical; // Устанавливаем вертикальную ориентацию элемента
-    }
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-auto-rows: auto;
+	grid-row-gap: 34px;
+	grid-column-gap: 100px;
+	justify-items: center;
+	padding-top: rem(40px);
+	overflow-x: auto;
+
+	&__item {
+		width: 100%;
+	}
+	.wrapper-img {
+		aspect-ratio: 5/5;
+		img {
+			object-fit: cover;
+		}
+	}
+	&__content {
+		padding: 0px rem(40px) rem(18px) rem(40px);
+	}
+	.text {
+		width: 100%;
+		padding-top: rem(10px);
+		overflow: hidden; // скрываем излишки контента
+		text-overflow: ellipsis; // добовляем троеточие к концу
+		display: -webkit-box; // Учитываем кроссбраузерность
+		-webkit-line-clamp: 2; // Указываем кол-во строк
+		-webkit-box-orient: vertical; // Устанавливаем вертикальную ориентацию элемента
+	}
 }
 
-@media screen and (min-width: 428px)  {
-    .gallery{
-        &__item {
-            width: 80%;
-        }    
-    }
-    
+@media screen and (min-width: 428px) {
+	.gallery {
+		&__item {
+			width: 80%;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-row-gap: 38px;
-        &__item {
-            width: 100%;
-            height: auto;
-        } 
-    }
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-row-gap: 38px;
+		&__item {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
-@media screen and (min-width: 992px){ 
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, auto);
-        grid-row-gap: 55px;
-        padding-top: rem(90px);
-        .wrapper-img {
-            aspect-ratio: 16/17;
-        }
-    }
+@media screen and (min-width: 992px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(2, auto);
+		grid-row-gap: 55px;
+		padding-top: rem(90px);
+		.wrapper-img {
+			aspect-ratio: 16/17;
+		}
+	}
 }

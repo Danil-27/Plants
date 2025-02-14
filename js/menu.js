@@ -3,7 +3,6 @@ const burger = document.querySelector('.burger');
 const navbar = document.querySelector('.navbar');
 const links = document.querySelectorAll('.menu__link');
 
-console.log(html);
 burger.addEventListener('click', toggleNavbar);
 
 links.forEach(link => {
