@@ -1,6 +1,9 @@
 html.noscroll {
 	overflow: hidden;
 }
+html.noscroll-popup {
+	overflow: hidden;
+}
 @media screen and (min-width: 768px) {
 	html.noscroll {
 		overflow: auto;

@@ -2,7 +2,6 @@ const gallery = document.getElementById('gallery');
 const bthGardens = document.getElementById('button-gardens');
 const bthLawn = document.getElementById('button-lawn');
 const bthPlanting = document.getElementById('button-planting');
-console.log(bthGardens, 'bthGardens');
 
 bthGardens.addEventListener('click', () => {
 	gallery.innerHTML = `
